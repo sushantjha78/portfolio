@@ -1,0 +1,27 @@
+
+.page-header {
+    background-color: rgb(241, 144, 87);
+    color: rgb(78, 38, 0);
+}
+
+.page-body {
+    background-color: rgb(129, 183, 214);
+}
+
+.page-tail {
+    background-color: rgb(241, 144, 87);
+    color: rgb(78, 38, 0);
+}
+
+a {
+    color: rgb(0, 89, 141);
+}
+
+img {
+    margin: 10px 10px 10px 10px;
+}
+
+html {
+    background-color: rgb(129, 183, 214);
+    color: rgb(0, 89, 141);
+}
