@@ -1,20 +1,26 @@
 
-.page-header {
-    background-color: rgb(241, 144, 87);
-    color: rgb(78, 38, 0);
+.page-header, .page-tail {
+    background-color: rgb(134,85,73);
+    color: rgb(68,45,39);
+        padding-top: 10px;
+        padding-left: 10px;
+}
+
+.page-header img {
+    border-radius: 20%;
+    float: right;
 }
 
 .page-body {
-    background-color: rgb(129, 183, 214);
-}
-
-.page-tail {
-    background-color: rgb(241, 144, 87);
-    color: rgb(78, 38, 0);
+    padding: 10px 10px 10px 10px;
 }
 
 a {
-    color: rgb(0, 89, 141);
+    color: rgb(85,60,68);
+}
+
+.page-tail a {
+    color: rgb(68,45,39);
 }
 
 img {
@@ -22,6 +28,11 @@ img {
 }
 
 html {
-    background-color: rgb(129, 183, 214);
-    color: rgb(0, 89, 141);
+    background-color: rgb(201,187,188);
+    color: rgb(85,60,68);
+
+}
+
+body {
+    margin: 0px 0px 10px 0px;
 }
