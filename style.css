@@ -1,38 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
-.page-header, .page-tail {
-    background-color: rgb(134,85,73);
-    color: rgb(68,45,39);
-        padding-top: 10px;
-        padding-left: 10px;
+.page-header {
+  background-color: rgb(134, 85, 73);
+  color: rgb(68, 45, 39);
+  padding-top: 10px;
+  padding-left: 10px;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
 }
 
-.page-header img {
-    border-radius: 20%;
-    float: right;
+#profile_pic {
+  border-radius: 20%;
+  float: right;
+  width: 20%;
+  margin-right: 3%;
 }
 
 .page-body {
-    padding: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 a {
-    color: rgb(85,60,68);
-}
-
-.page-tail a {
-    color: rgb(68,45,39);
+  color: rgb(85, 60, 68);
 }
 
 img {
-    margin: 10px 10px 10px 10px;
+  border-radius: 4%;
+  width: 30%;
+  height: auto;
 }
 
 html {
-    background-color: rgb(201,187,188);
-    color: rgb(85,60,68);
-
+  background-color: rgb(201, 187, 188);
+  color: rgb(85, 60, 68);
+  font-family: "Comic Neue", cursive;
 }
 
 body {
-    margin: 0px 0px 10px 0px;
+  margin: 0px 0px 10px 0px;
+}
+
+.page-tail {
+  background-color: rgb(134, 85, 73);
+  color: rgb(68, 45, 39);
+  padding-top: 10px;
+  padding-left: 10px;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
 }
