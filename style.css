@@ -28,6 +28,7 @@ img {
   border-radius: 4%;
   width: 30%;
   height: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 html {
