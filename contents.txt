@@ -1,0 +1,29 @@
+navigation bar:
+- About
+- Skills
+- Projects
+- Hobbies
+- Contact
+
+## About
+Welcome to my portfolio site! I am a skilled professional specializing in full stack web development, with expertise in deep learning and image processing. Through innovative problem-solving and a passion for cutting-edge technologies, I strive to create impactful solutions that bridge the gap between creativity and functionality. Explore my projects and discover how I bring ideas to life.
+
+## Skills
+- Python
+- JavaScript
+- React
+- Node.js
+
+## Projects
+- [Pokedex]
+- [PokeAPI]
+
+## Hobbies
+- [Photography]
+- [Guitar]
+- [Cooking]
+
+## Contact
+- [LinkedIn]
+- [Email]
+
