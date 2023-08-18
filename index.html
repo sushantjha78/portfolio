@@ -14,14 +14,24 @@
   </head>
 
   <body>
-    <div class="navigation ">
+    <div class="navigation">
       <nav class="navbar navbar-default navbar-fixed-top">
         <form class="container-fluid justify-content-center">
-          <a href="#about" class="btn btn-outline-success me-3" role="button">About</a>
-          <a href="#skills" class="btn btn-outline-success me-3" role="button">Skills</a>
-          <a href="#projects" class="btn btn-outline-success me-3" role="button">Projects</a>
-          <a href="#hobbies" class="btn btn-outline-success me-3" role="button">Hobbies</a>
-          <a href="#contact" class="btn btn-outline-success me-3" role="button">Contact</a>
+          <a href="#about" class="btn btn-outline-success me-3" role="button"
+            >About</a
+          >
+          <a href="#skills" class="btn btn-outline-success me-3" role="button"
+            >Skills</a
+          >
+          <a href="#projects" class="btn btn-outline-success me-3" role="button"
+            >Projects</a
+          >
+          <a href="#hobbies" class="btn btn-outline-success me-3" role="button"
+            >Hobbies</a
+          >
+          <a href="#contact" class="btn btn-outline-success me-3" role="button"
+            >Contact</a
+          >
         </form>
       </nav>
     </div>
@@ -32,7 +42,7 @@
           <div class="col-10 col-sm-8 col-lg-6">
             <img
               src=".\assets\images\profile_pic.jpg"
-              class="d-block mx-lg-auto img-fluid"
+              class="d-block mx-lg-auto img-fluid rounded-5"
               alt="Bootstrap Themes"
               width="1400"
               height="1120"
@@ -40,18 +50,12 @@
             />
           </div>
           <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">
-              Sushant Jha
-            </h1>
-            <h3>Software Developer</h3>
-            <p class="lead">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Sushant Jha</h1>
+            <h3 class="pt-2">Software Developer</h3>
+            <p class="lead fw-normal">
               Welcome to my portfolio site! I am a skilled professional
               specializing in full stack web development, with expertise in deep
-              learning and image processing. Through innovative problem-solving
-              and a passion for cutting-edge technologies, I strive to create
-              impactful solutions that bridge the gap between creativity and
-              functionality. Explore my projects and discover how I bring ideas
-              to life.
+              learning and image processing.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
               <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
@@ -69,11 +73,84 @@
       </div>
     </div>
 
+    <div class="skills" id="skills">
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">Skills</h2>
+
+        <div class="row g-2">
+          <div class="col-sm-2">
+            <img src="./assets/logo/python.svg" class="img-thumbnail rounded-5" alt="python">
+          </div>
+          <div class="col-sm-2">
+            <img src="./assets/logo/pytorch.svg" class="img-thumbnail rounded-5"  alt="...">
+          </div>
+          <div class="col-sm-2">
+            <img src="./assets/logo/tensorflow.svg" class="img-thumbnail rounded-5" alt="...">
+          </div>
+          <div class="col-sm-2">
+            <img src="./assets/logo/opencv.svg" class="img-thumbnail rounded-5" alt="...">
+          </div>
+          <div class="col-sm-2">
+            <img src="./assets/logo/matlab.svg" class="img-thumbnail rounded-5" alt="...">
+          </div>
+          <div class="col-sm-2 ">
+            <img src="./assets/logo/c-programming.svg" class="img-thumbnail rounded-5" alt="...">
+          </div>
+          <div class="col-sm-2 ">
+            <img src="./assets/logo/c++.svg" class="img-thumbnail rounded-5" alt="...">
+          </div>
+          <div class="col-sm-2 ">
+            <img src="./assets/logo/arduino.svg" class="img-thumbnail rounded-5" alt="...">
+          </div>
+          <div class="col-sm-2 ">
+            <img src="./assets/logo/linux.svg" class="img-thumbnail rounded-5" alt="...">
+          </div>
+          <div class="col-sm-2 ">
+            <img src="./assets/logo/git.svg" class="img-thumbnail rounded-5" alt="...">
+          </div>
+          <div class="col-sm-2 ">
+            <img src="./assets/logo/mysql.svg" class="img-thumbnail rounded-5" alt="...">
+          </div>
+          <div class="col-sm-2 ">
+            <img src="./assets/logo/mongodb.svg" class="img-thumbnail rounded-5" alt="...">
+          </div>
+          <div class="col-sm-2">
+            <img src="./assets/logo/html.svg" class="img-thumbnail rounded-5" alt="...">
+          </div>
+          <div class="col-sm-2 ">
+            <img src="./assets/logo/css.svg" class="img-thumbnail rounded-5" alt="...">
+          </div>
+          <div class="col-sm-2 ">
+            <img src="./assets/logo/bootstrap.svg" class="img-thumbnail rounded-5" alt="...">
+          </div>
+          <div class="col-sm-2 ">
+            <img src="./assets/logo/js.svg" class="img-thumbnail rounded-5" alt="...">
+          </div>
+          <div class="col-sm-2 ">
+            <img src="./assets/logo/nodejs.svg" class="img-thumbnail rounded-5" alt="...">
+          </div>
+          <div class="col-sm-2 ">
+            <img src="./assets/logo/express.svg" class="img-thumbnail rounded-5" alt="...">
+          </div>
+          <div class="col-sm-2 ">
+            <img src="./assets/logo/react.svg" class="img-thumbnail rounded-5" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="projects" id="projects">
       <div class="container px-4 py-5" id="custom-cards">
-        <h2 class="pb-2 border-bottom">Custom cards</h2>
+        <h2 class="pb-2 border-bottom">Projects</h2>
 
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <p class="lead fw-normal">
+          Through innovative problem-solving and a passion for cutting-edge
+          technologies, I strive to create impactful solutions that bridge the
+          gap between creativity and functionality. Explore my projects and
+          discover how I bring ideas to life.
+        </p>
+
+        <div class="row row-cols-3 row-cols-md-3 align-items-stretch g-4 py-5">
           <div class="col">
             <div
               class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
@@ -121,7 +198,7 @@
                 class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
               >
                 <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                  Much longer title that wraps to multiple lines
+                  Much lsdsdsvd
                 </h2>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
@@ -185,13 +262,49 @@
               </div>
             </div>
           </div>
+
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+              style="background-image: url('unsplash-photo-3.jpg')"
+            >
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Another longer title belongs here
+                </h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="https://github.com/twbs.png"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white"
+                    />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>California</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>5d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="hobbies" id="hobbies">
       <div class="container px-4 py-5" id="featured-3">
-        <h2 class="pb-2 border-bottom">Columns with icons</h2>
+        <h2 class="pb-2 border-bottom">Hobbies</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
           <div class="feature col">
             <div class="feature-icon bg-primary bg-gradient">
@@ -255,18 +368,40 @@
     </div>
 
     <div class="contact" id="contact">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-0">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 border-0"
+      >
         <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
           </a>
           <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use></svg
+            ></a>
+          </li>
         </ul>
       </footer>
     </div>
