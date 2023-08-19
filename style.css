@@ -14,7 +14,12 @@
   background-color: #ff9595;
 }
 
-
+/* for screens less than 575px wide */
+@media screen and (max-width: 575px) {
+  #custom-cards {
+    
+  }
+}
 
 
 
