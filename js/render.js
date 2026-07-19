@@ -38,8 +38,11 @@ function renderExperience() {
   const jobs = EXPERIENCE.map(
     (job) => `
     <article class="entry">
-      <h3>${job.role}</h3>
-      <p class="entry-meta"><span class="org">${job.company}</span> · ${job.location} · <span class="period">${job.period}</span></p>
+      <div class="entry-head">
+        <h3>${job.role}</h3>
+        <span class="period">${job.period}</span>
+      </div>
+      <p class="entry-meta"><span class="org">${job.company}</span> · ${job.location}</p>
       <ul>${job.points.map((point) => `<li>${point}</li>`).join("")}</ul>
     </article>`
   ).join("");
@@ -85,8 +88,11 @@ function renderVolunteering() {
   const roles = VOLUNTEERING.map(
     (item) => `
     <article class="entry">
-      <h3>${item.role}</h3>
-      <p class="entry-meta"><span class="org">${item.org}</span> · <span class="period">${item.period}</span></p>
+      <div class="entry-head">
+        <h3>${item.role}</h3>
+        <span class="period">${item.period}</span>
+      </div>
+      <p class="entry-meta"><span class="org">${item.org}</span></p>
       ${item.points.length ? `<ul>${item.points.map((point) => `<li>${point}</li>`).join("")}</ul>` : ""}
     </article>`
   ).join("");
@@ -97,8 +103,11 @@ function renderEducation() {
   const entries = EDUCATION.map(
     (item) => `
     <article class="entry">
-      <h3>${item.school}</h3>
-      <p class="entry-meta">${item.degree} · <span class="period">${item.period}</span> · ${item.detail}</p>
+      <div class="entry-head">
+        <h3>${item.school}</h3>
+        <span class="period">${item.period}</span>
+      </div>
+      <p class="entry-meta">${item.degree} · ${item.detail}</p>
       <p class="entry-meta">Activities: ${item.activities}</p>
     </article>`
   ).join("");

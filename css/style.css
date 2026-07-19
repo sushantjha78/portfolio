@@ -186,6 +186,18 @@ li::marker {
   margin-bottom: 1.75rem;
 }
 
+.entry-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  flex-wrap: wrap;
+}
+
+.entry-head h3 {
+  margin-bottom: 0;
+}
+
 .entry-meta {
   color: var(--muted);
   font-size: 0.92rem;
