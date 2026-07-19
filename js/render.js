@@ -39,7 +39,7 @@ function renderExperience() {
     (job) => `
     <article class="entry">
       <h3>${job.role}</h3>
-      <p class="entry-meta">${job.company} · ${job.location} · <span class="period">${job.period}</span></p>
+      <p class="entry-meta"><span class="org">${job.company}</span> · ${job.location} · <span class="period">${job.period}</span></p>
       <ul>${job.points.map((point) => `<li>${point}</li>`).join("")}</ul>
     </article>`
   ).join("");
@@ -86,7 +86,7 @@ function renderVolunteering() {
     (item) => `
     <article class="entry">
       <h3>${item.role}</h3>
-      <p class="entry-meta">${item.org} · <span class="period">${item.period}</span></p>
+      <p class="entry-meta"><span class="org">${item.org}</span> · <span class="period">${item.period}</span></p>
       ${item.points.length ? `<ul>${item.points.map((point) => `<li>${point}</li>`).join("")}</ul>` : ""}
     </article>`
   ).join("");
@@ -121,7 +121,7 @@ function renderSkills() {
     (group) => `
     <div class="skill-group">
       <h3>${group.group}</h3>
-      <p>${group.items.join(", ")}</p>
+      <p class="chips">${group.items.map((item) => `<span class="chip">${item}</span>`).join("")}</p>
     </div>`
   ).join("");
   fill("skills-list", groups);
