@@ -79,6 +79,22 @@ function renderResearchFull() {
   fill("research-full", `<p>${RESEARCH_INTRO}</p>` + papers);
 }
 
+// The Writing section stays hidden until data/writing.js has entries.
+function renderWriting() {
+  const section = document.getElementById("writing");
+  if (!section || WRITING.length === 0) return;
+  section.hidden = false;
+  const pieces = WRITING.map(
+    (piece) => `
+    <article class="entry">
+      <h3><a href="${piece.url}">${piece.title}</a></h3>
+      <p class="entry-meta">${piece.source}${piece.date ? " · " + piece.date : ""}</p>
+      <p>${piece.summary}</p>
+    </article>`
+  ).join("");
+  fill("writing-list", pieces);
+}
+
 function renderVolunteering() {
   const roles = VOLUNTEERING.map(
     (item) => `
@@ -151,6 +167,7 @@ if (typeof RESEARCH !== "undefined") {
   renderResearchSummary();
   renderResearchFull();
 }
+if (typeof WRITING !== "undefined") renderWriting();
 if (typeof VOLUNTEERING !== "undefined") renderVolunteering();
 if (typeof EDUCATION !== "undefined") renderEducation();
 if (typeof CERTIFICATIONS !== "undefined") renderCertifications();
