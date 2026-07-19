@@ -55,7 +55,7 @@ function renderResearchSummary() {
     (paper) => `
     <article class="entry">
       <h3>${paper.title}</h3>
-      <p class="entry-meta">${paper.venue}${paper.note ? " · " + paper.note : ""}</p>
+      <p class="entry-meta">${paper.venue}${paper.note ? " · " + paper.note : ""} · <a href="${paper.url}">Read the paper</a></p>
       <p>${paper.summary}</p>
     </article>`
   ).join("");
@@ -71,17 +71,12 @@ function renderResearchFull() {
     (paper) => `
     <article class="entry">
       <h3>${paper.title}</h3>
-      <p class="entry-meta">${paper.venue}${paper.note ? " · " + paper.note : ""}</p>
+      <p class="entry-meta">${paper.venue}${paper.note ? " · " + paper.note : ""} · <a href="${paper.url}">Read the paper</a></p>
       <p>${paper.details}</p>
       <p class="entry-meta">${paper.coauthors}</p>
     </article>`
   ).join("");
-  fill(
-    "research-full",
-    `<p>${RESEARCH_INTRO}</p>` +
-      papers +
-      `<p class="entry-meta">ORCID: <a href="${ORCID.url}">${ORCID.id}</a></p>`
-  );
+  fill("research-full", `<p>${RESEARCH_INTRO}</p>` + papers);
 }
 
 function renderVolunteering() {
@@ -92,7 +87,7 @@ function renderVolunteering() {
         <h3>${item.role}</h3>
         <span class="period">${item.period}</span>
       </div>
-      <p class="entry-meta"><span class="org">${item.org}</span></p>
+      <p class="entry-meta">${item.orgUrl ? `<a class="org" href="${item.orgUrl}">${item.org}</a>` : `<span class="org">${item.org}</span>`}</p>
       ${item.points.length ? `<ul>${item.points.map((point) => `<li>${point}</li>`).join("")}</ul>` : ""}
     </article>`
   ).join("");

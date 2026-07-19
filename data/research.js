@@ -9,6 +9,7 @@ const RESEARCH = [
     title: "Decoding Motion-Blur using Variational Autoencoder",
     venue: "ICCET 2023",
     note: "",
+    url: "https://doi.org/10.1049/icp.2023.1496",
     summary:
       "A deep learning method that recovers sharp, high-frame-rate video from a " +
       "single motion-blurred frame.",
@@ -23,6 +24,7 @@ const RESEARCH = [
     title: "Survey of Temporal Video Enhancement Techniques",
     venue: "ICCET 2023",
     note: "First author",
+    url: "https://doi.org/10.1049/icp.2023.1508",
     summary:
       "A survey of how video deblurring and video generation methods evolved from " +
       "classical techniques to transformer-based models.",
@@ -33,8 +35,3 @@ const RESEARCH = [
     coauthors: "Co-authored with Sushlok Shah and Dr. Saugata Sinha (VNIT Nagpur).",
   },
 ];
-
-const ORCID = {
-  id: "0009-0004-8951-7336",
-  url: "https://orcid.org/0009-0004-8951-7336",
-};

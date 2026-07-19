@@ -46,7 +46,6 @@ const SITE = {
     { label: "Email", value: "hello.sushant.jha@gmail.com", url: "mailto:hello.sushant.jha@gmail.com" },
     { label: "LinkedIn", value: "linkedin.com/in/sushant-jha", url: "https://www.linkedin.com/in/sushant-jha" },
     { label: "GitHub", value: "github.com/sushantjha78", url: "https://github.com/sushantjha78" },
-    { label: "ORCID", value: "0009-0004-8951-7336", url: "https://orcid.org/0009-0004-8951-7336" },
   ],
 
   footerNote: "Sushant Jha",

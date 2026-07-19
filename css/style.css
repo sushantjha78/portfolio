@@ -209,6 +209,14 @@ li::marker {
   font-weight: 500;
 }
 
+a.org {
+  text-decoration: none;
+}
+
+a.org:hover {
+  text-decoration: underline;
+}
+
 .period {
   white-space: nowrap;
   background: var(--tint);

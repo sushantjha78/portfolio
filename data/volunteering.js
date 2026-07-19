@@ -4,6 +4,7 @@ const VOLUNTEERING = [
   {
     role: "Backend Developer",
     org: "RenuKiran Welfare Foundation",
+    orgUrl: "https://www.renukiran.org/",
     period: "Apr 2026 – May 2026",
     points: [
       "Helped build the backend for the foundation's education platform: designed " +
