@@ -17,9 +17,18 @@ const SITE = {
     { label: "About", href: "index.html#about" },
     { label: "Experience", href: "index.html#experience" },
     { label: "Research", href: "research.html" },
+    { label: "Writing", href: "index.html#writing" },
     { label: "Skills", href: "index.html#skills" },
     { label: "Contact", href: "index.html#contact" },
   ],
+
+  // The downloadable CV. "file" is the name the browser saves it as.
+  // To publish a new version, replace assets/01-sushant.pdf.
+  resume: {
+    url: "assets/01-sushant.pdf",
+    file: "01-sushant.pdf",
+    label: "Download Resume",
+  },
 
   // Each string is one paragraph of the About section.
   about: [
@@ -43,9 +52,21 @@ const SITE = {
   ],
 
   contact: [
-    { label: "Email", value: "hello.sushant.jha@gmail.com", url: "mailto:hello.sushant.jha@gmail.com" },
-    { label: "LinkedIn", value: "linkedin.com/in/sushant-jha", url: "https://www.linkedin.com/in/sushant-jha" },
-    { label: "GitHub", value: "github.com/sushantjha78", url: "https://github.com/sushantjha78" },
+    {
+      label: "Email",
+      value: "hello.sushant.jha@gmail.com",
+      url: "mailto:hello.sushant.jha@gmail.com",
+    },
+    {
+      label: "LinkedIn",
+      value: "linkedin.com/in/sushant-jha",
+      url: "https://www.linkedin.com/in/sushant-jha",
+    },
+    {
+      label: "GitHub",
+      value: "github.com/sushantjha78",
+      url: "https://github.com/sushantjha78",
+    },
   ],
 
   footerNote: "Sushant Jha",

@@ -9,3 +9,4 @@ All the content lives in the `data/` folder as plain JavaScript objects. Each se
 - `data/`: all content
 - `js/render.js`: builds the pages from the data
 - `css/style.css`: styles
+- `assets/`: images, favicon, and the downloadable resume

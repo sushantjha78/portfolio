@@ -7,15 +7,20 @@ function fill(id, html) {
   if (container) container.innerHTML = html;
 }
 
+// Downward arrow, drawn inline so the button needs no image request.
+const DOWNLOAD_ICON = `<svg class="btn-icon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 1.5v8.5M4.5 6.5 8 10l3.5-3.5M2.5 13.5h11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+function resumeButton() {
+  if (!SITE.resume) return "";
+  return `<a class="btn" href="${SITE.resume.url}" download="${SITE.resume.file}">${DOWNLOAD_ICON}${SITE.resume.label}</a>`;
+}
+
 function renderHeader() {
   const links = SITE.nav
     .map((item) => `<a href="${item.href}">${item.label}</a>`)
     .join("");
-  fill(
-    "site-header",
-    `<a class="site-name" href="index.html">${SITE.name}</a>
-     <nav>${links}</nav>`
-  );
+  // No site name here: the hero carries it, and the nav links lead home.
+  fill("site-header", `<nav>${links}</nav>`);
 }
 
 function renderHero() {
@@ -23,7 +28,10 @@ function renderHero() {
     "hero",
     `<img class="hero-photo" src="${SITE.photo}" alt="${SITE.photoAlt}" width="112" height="112">
      <div class="hero-text">
-       <h1>${SITE.name}</h1>
+       <div class="hero-title">
+         <h1>${SITE.name}</h1>
+         ${resumeButton()}
+       </div>
        <p class="tagline">${SITE.tagline}</p>
        <p class="location">${SITE.location}</p>
      </div>`
@@ -86,10 +94,11 @@ function renderWriting() {
   section.hidden = false;
   const pieces = WRITING.map(
     (piece) => `
-    <article class="entry">
+    <article class="card">
+      <p class="entry-meta card-source">${piece.source}${piece.date ? " · " + piece.date : ""}</p>
       <h3><a href="${piece.url}">${piece.title}</a></h3>
-      <p class="entry-meta">${piece.source}${piece.date ? " · " + piece.date : ""}</p>
       <p>${piece.summary}</p>
+      <p class="card-link"><a href="${piece.url}">Read on ${piece.source}<span aria-hidden="true"> →</span></a></p>
     </article>`
   ).join("");
   fill("writing-list", pieces);
@@ -151,7 +160,11 @@ function renderContact() {
   const links = SITE.contact.map(
     (item) => `<li><span class="contact-label">${item.label}</span><a href="${item.url}">${item.value}</a></li>`
   ).join("");
-  fill("contact-list", `<ul class="contact">${links}</ul>`);
+  fill(
+    "contact-list",
+    `<ul class="contact">${links}</ul>
+     <p class="actions">${resumeButton()}</p>`
+  );
 }
 
 function renderFooter() {
